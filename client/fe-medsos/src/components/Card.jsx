@@ -3,9 +3,11 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { PiPaperPlaneTilt } from "react-icons/pi";
 import { FiRepeat } from "react-icons/fi";
 
-const Card = () => {
-
-    const imageUrl = "";
+const Card = ({
+  username = "username",
+  caption = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis nisi vel nunc eleifend, et finibus lorem consectetur Donec eget aliquet urna. Fusce eget consectetur dolor. Suspendisse consequat ipsum vitae elit iaculis, nec tempor purus porttitorInteger sit amet massa at ipsum consequat sodales. Curabitur hendrerit a lectus vitae tincidunt. Integer erat odio, dictum sit amet odio pulvinar, vestibulum commodo augue. Phasellus eu luctusex. Fusce gravida blandit sapien, quis lobortis tellus dignissim porttitor.",
+  imageUrl = "",
+}) => {
 
   return (
     <>
@@ -15,28 +17,20 @@ const Card = () => {
         </div>
         <div className="flex flex-col gap-5">
           <div>
-            <h1 className="font-semibold text-lg">username</h1>
+            <h1 className="font-semibold text-lg">{username}</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              iaculis nisi vel nunc eleifend, et finibus lorem consectetur.
-              Donec eget aliquet urna. Fusce eget consectetur dolor. Suspendisse
-              consequat ipsum vitae elit iaculis, nec tempor purus porttitor.
-              Integer sit amet massa at ipsum consequat sodales. Curabitur
-              hendrerit a lectus vitae tincidunt. Integer erat odio, dictum sit
-              amet odio pulvinar, vestibulum commodo augue. Phasellus eu luctus
-              ex. Fusce gravida blandit sapien, quis lobortis tellus dignissim
-              porttitor.
+            {caption}
             </p>
           </div>
+          {imageUrl && (
           <div>
-            {imageUrl && (
               <img
                 src={imageUrl}
                 alt="gambar"
                 className="h-96 w-72 rounded-xl object-cover"
               />
-            )}
           </div>
+          )}
           <div className="flex gap-10 text-xl">
             <FaRegHeart />
             <BiMessageSquareDetail />
