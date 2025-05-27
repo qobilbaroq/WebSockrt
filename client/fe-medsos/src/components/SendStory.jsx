@@ -12,7 +12,7 @@ const SendStory = () => {
             <FaUserAlt />
           </div>
           <textarea
-            className="focus:outline-transparent w-[15rem]  p-2 resize-none overflow-hidden border-gray-300"
+            className="focus:outline-transparent w-[15rem] p-2 resize-none overflow-hidden border-gray-300"
             rows="4"
             placeholder="Apa yang sedang terjadi?"
           ></textarea>

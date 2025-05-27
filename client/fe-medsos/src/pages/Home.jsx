@@ -29,6 +29,11 @@ const Home = () => {
     caption: "lihat burung di langit",
     imageUrl: "https://dummyimage.com/75x75/333/fff",
   },
+  {
+    username: "rizal",
+    caption: "sedang pusing dengan codingan ",
+    imageUrl: "",
+  },
 ];
 
   return (
